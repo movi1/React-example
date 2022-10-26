@@ -4,11 +4,13 @@ import Cat1 from '../image/cat.jpg';
 
 import Button from './Button.js';
 
-function Card({ name, colour, text, image, buttonText }) {
+
+function Card({ name, colour, text, image, buttonText, }) {
 
     const styles = {
         backgroundColor: colour,
         button: colour,
+        
     }
 
     console.log(image)
@@ -30,15 +32,19 @@ function Card({ name, colour, text, image, buttonText }) {
             <h2>Hi, I am a Dog!</h2>
             </>
         )}
+ 
+        
         {image === "Cat1" && (
             <>
-            <img src={Cat1} className="Dog-Img" alt="logo" />
+            <img src={Cat1} className="Cat-Img" alt="logo"  />
             <h2>Hi, I am a Cat!</h2>
+          
             </>
         )}
 
 
         <p>My name is {name}</p>
+        
         
 
 
@@ -47,9 +53,9 @@ function Card({ name, colour, text, image, buttonText }) {
 
         {
             text === true ?
-                <p>I have No common sense</p>
+                <p>I am very cute</p>
                 :
-                <p>I do have some common sense</p>
+                <p>I can be very naugthy</p>
         }
         < Button text={buttonText} ></Button >
     </div>

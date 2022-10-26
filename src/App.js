@@ -25,13 +25,14 @@ function App() {
           {/* <ExampleComponent name="Bob and" age="2 years old">
           </ExampleComponent> */}
           <div className="Flex">
-            <Card name="Bubble" colour="#FF6208" age="4" image={"Cat1"} buttonText={"Cat Button"} />
-            <Card name="Bobby" colour="#FFC300" text={true} image={"Dog1"} buttonText={"Doggy Button"}/>
+            <Card name="Bubble" colour="#18551D" text={true} image={"Cat1"} buttonText={"Cat Button"} /></div>
             <div className="Flex">
-              <Card name="Lap" colour="#FF6208" age="4" image={"Dog2"} buttonText={"Doggy Button"} />
+            <Card name="Bobby" colour="#505518" text={false} image={"Dog1"} buttonText={"Doggy Button"}/></div>
+            <div className="Flex">
+              <Card name="Lap" colour="#185055" text={true} image={"Dog2"} buttonText={"Doggy Button"} /></div>
             </div>
-          </div>
-        </div>
+          
+        
       </header>
     </div>
 

@@ -4,20 +4,20 @@ import { useState } from "react";
 
 function Button(props) {
   
-    const [ buttonColour, setButtonColour ] = useState('white');
+    const [ buttonColour, setButtonColour ] = useState('#390810');
 
     const buttonStyles = {
         borderRadius: '20px',
         border: '1px solid black',
         backgroundColor: buttonColour,
-        color: 'black',
-        fontSize: '2rem',
-        padding: '1.3rem 3rem',
+        color: '#fff',
+        fontSize: '1.5rem',
+        padding: '1rem 1.5rem',
     
 
     }
 const changeColour = () => {
-    setButtonColour('green');
+    setButtonColour('#EF5350');
 }
 return (
     <button className="btn" style={buttonStyles} onClick={changeColour}>{props.text}</button>

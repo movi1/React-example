@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+ 
 }
 
 .App-link {
@@ -43,10 +44,30 @@
   gap: 20px;
   /* padding: 40px; */
   align-items: center;
+  box-shadow:  2px 2px 2px black ;
+ 
 
 }
 .btn {
-  background-color: white;
-margin-bottom: 10px;
+  background-color: #390810;
+margin-bottom: 20px;
+cursor: pointer;
+box-shadow:  2px 2px 2px black ;
 
+}
+h2 {
+  padding: 10px;
+  color: #390810;
+ 
+  ;
+}
+img {
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow:  5px 5px 5px black ;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+}
+img:hover {
+  transform: rotate(360deg);
 }
