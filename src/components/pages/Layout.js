@@ -1,24 +1,20 @@
 import { Outlet } from "react-router-dom";
+import Navbar from './Navbar';
 
 const Layout = () => {
-    return (
-      <>
-      <header className="App-header">
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="card">Card</a></li>
-          </ul>
-        </nav>
-      </header>
+  return (
+    <>
+      <Navbar />
+      {/* <header className="App-header">
+        
+          
+        
+      </header> */}
       <div className="page-container">
         <Outlet />
-        </div>
-      </>
-    )
-  };
-  
-  export default Layout;
-  
+      </div>
+    </>
+  )
+};
+
+export default Layout;
